@@ -6,7 +6,12 @@ import "./App.css";
 import notificationSound from "./notification.mp3"; // Import the notification sound
 
 function App() {
-  const [chat, setChat] = useState([{ sender: "bot", text: "Hey" }]);
+  const [chat, setChat] = useState([
+    {
+      sender: "bot",
+      text: "Hey there,",
+    },
+  ]);
   const [userMessage, setUserMessage] = useState("");
   const chatEndRef = useRef(null);
   const notificationAudio = useRef(null);
